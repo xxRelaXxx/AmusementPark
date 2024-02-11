@@ -242,6 +242,11 @@ nav {
     .form-box {
       max-width: 90%;
     }
+
+    .header {
+        & span {
+            font-size: clamp(3rem, 4rem, 6rem);;
+        }
   }
   
   /*Media for PC*/
