@@ -258,6 +258,40 @@ nav {
     .form-box {
       width: 50vw;
     }
+
+    .header {
+        /*for left cloud*/
+        & span::before { /*pseudo-class that creates content BEFORE some existing object*/
+            opacity: 0.8;
+            position: absolute;
+            top: 30px;
+            left: -300px;
+            content: "";
+            background-image: url("../IMG/cloud.png");
+            background-size: 280px 150px;
+            background-repeat: no-repeat;
+            width: 280px;
+            height: 150px;
+            filter: drop-shadow(0 7px 10px rgba(0, 0, 0, 0.6));
+            animation: cloudToRight 2.6s ease-out forwards;
+        }
+    
+        /*for right cloud*/
+        & span::after { /*pseudo-class that creates content AFTER some existing object*/
+            opacity: 0.8;
+            position: absolute;
+            bottom: 30px;
+            right: -300px;
+            content: "";
+            background-image: url("../IMG/cloud.png");
+            background-size: 280px 150px;
+            background-repeat: no-repeat;
+            width: 280px;
+            height: 150px;
+            filter: drop-shadow(0 7px 10px rgba(0, 0, 0, 0.6));
+            animation: cloudToLeft 2.6s ease-out forwards;
+        }
+    }
   }
   
 footer {
