@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>RelaXPark</title>
+</head>
+<body>
+        <!--pretty entrance for the site-->
+        <header class="header">
+            <div class="cloud1"></div>
+            <div class="cloud2"></div>
+            <span>RelaX Amusement Park</span>
+        </header>
+
+        <!--sticky navigation bar-->
+        <nav>
+            <ul>
+                <li><a href="#top">Home</a></li>
+                <li><a href="#atractions">Atractions</a></li>
+                <li><a href="#book">Book</a></li>
+            </ul>
+        </nav>
+
+        <!--all attractions section + contacts-->
+        <div id="atractions">
+            <!--roller-coaster attraction card-->
+            <div id="roll-coast">
+                <div class="presentation-card">
+                    <div class="image">
+                        <img src="IMG/roller-coaster.jpeg" alt="Roller Coaster">
+                    </div>
+                    <div class="description">
+                        <h2>Roller Coaster</h2>
+                        <p>Experience the thrill of our adrenaline-pumping roller coaster! With loops, twists, and turns, it's sure to be an unforgettable ride for thrill-seekers of all ages.</p>
+                    </div>
+                </div>
+                <div class="check-box">
+                    <label for="roll-coast">Book roller coaster?</label>
+                    <input type="checkbox" name="roll-coast" id="roll-chek">
+                </div>
+
+            </div>
+        
+            <!--carting attraction card-->
+            <div id="carting">
+                <div class="presentation-card">
+                    <div class="image">
+                        <img src="IMG/karting.jpg" alt="Go Kart">
+                    </div>
+                    <div class="description">
+                        <h2>Go Karting</h2>
+                        <p>Get ready to race in our thrilling go-kart tracks! Feel the excitement as you speed around corners and overtake your opponents in a heart-pounding race to the finish line.</p>
+                    </div>
+                </div>
+                <div class="check-box">
+                    <label for="roll-coast">Book karting?</label>
+                    <input type="checkbox" name="roll-coast" id="cart">
+                </div>
+            </div>
+            
+            <!--bump-boat attraction card-->
+            <div id="bump-boat">
+                <div class="presentation-card">
+                    <div class="image">
+                        <img src="IMG/bump-boat.jpg" alt="Bump Boats">
+                    </div>
+                    <div class="description">
+                        <h2>Bump Boats</h2>
+                        <p>Climb aboard our bump boats for a splash-tastic adventure! Maneuver through the water and bump into your friends in a fun-filled water ride that's perfect for all ages.</p>
+                    </div>
+                </div>
+                <div class="check-box">
+                    <label for="roll-coast">Book bump boat?</label>
+                    <input type="checkbox" name="roll-coast" id="bump-b">
+                </div>
+            </div>
+            
+            <!--section for form-->
+            <div id="book">
+                <div class="form-box">
+                    <form>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="surname">Surname</label>
+                        <input type="text" id="surname" name="surname" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="abc@gmail.com" required>
+
+                        <label for="tel">Phone number</label>
+                        <input type="tel" id="tel" name="tel" placeholder="+39xxxxxxxxxx">
+
+                        <label for="atraction">Select atraction:</label>
+                        <select name="atraction" id="atraction">
+                            <option value="roll-coast">Roller coaster</option>
+                            <option value="carting">Carting</option>
+                            <option value="bump-boat">Bump boat</option>
+                        </select>
+
+                        <label for="date">Visit date</label>
+                        <input type="date" id="date" name="date">
+
+                        <button class="form-button">CONFIRM</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!--footer for contacts and author info-->
+        <footer>
+            <p>Site made by @RelaX</p>
+            <h5>Tel: +39 378 582 4224</h5>
+            <h5>Adress: via Paradiso, 111</h5>
+        </footer>
+</body>
+</html>
